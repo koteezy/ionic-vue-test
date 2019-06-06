@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import './components';
+import './components.js';
 
 import Vue from 'vue';
 import App from './App.vue';
