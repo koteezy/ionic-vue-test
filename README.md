@@ -1,29 +1,26 @@
-# phone-app
-
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## Preview in android, works fine
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+ionic cordova run android -l
 ```
 
-### Run your tests
+## Build
 ```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
+adb uninstall io.ionic.starter
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+ionic cordova build android --prod --release
+```
+
+```
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore myApp.keystore platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk myApp
+```
+
+```
+adb install platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk 
+```
