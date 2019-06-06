@@ -22,5 +22,9 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore myApp.keystore 
 ```
 
 ```
+Password for jarsigner: dadada
+```
+
+```
 adb install platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk 
 ```
