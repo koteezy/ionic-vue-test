@@ -1,0 +1,8 @@
+{
+  "name": "trackGo",
+  "type": "vue",
+  "id": "abc123",
+  "integrations": {
+    "cordova": {}
+  }
+}
